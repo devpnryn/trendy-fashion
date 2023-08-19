@@ -14,7 +14,7 @@ import theme, { Colors } from './styles/theme'
 function App() {
 
   useEffect(() => {
-    document.title = 'React Material UI'
+    document.title = 'Trendy Fashions'
   }, [])
 
   return (

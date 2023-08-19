@@ -1,7 +1,8 @@
 
 # Trendy Fashion
 
-![Trendy Fashion Logo](path-to-logo-if-any.png)
+![Trendy Fashion Logo](https://github.com/devpnryn/trendy-fashion.git/raw/main/public/images/bag_01.png)
+
 
 **Trendy Fashion** is a modern ecommerce website dedicated to shopping bags. Showcasing state-of-the-art web design and development practices, it serves both as a platform for fashionable accessories and a testament to the developer's expertise.
 
@@ -30,7 +31,7 @@
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/trendy-fashion.git
+git clone https://github.com/devpnryn/trendy-fashion.git
 ```
 
 2. Navigate to the project directory

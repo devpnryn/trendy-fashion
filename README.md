@@ -1,8 +1,7 @@
 
 # Trendy Fashion
 
-![Trendy Fashion Logo](https://github.com/devpnryn/trendy-fashion.git/raw/main/public/images/bag_01.png)
-
+![Trendy Fashion Logo](https://github.com/devpnryn/trendy-fashion/blob/c45978af03a8b818a4936e6664998f603136fb67/public/images/products/bag_01.png)
 
 **Trendy Fashion** is a modern ecommerce website dedicated to shopping bags. Showcasing state-of-the-art web design and development practices, it serves both as a platform for fashionable accessories and a testament to the developer's expertise.
 

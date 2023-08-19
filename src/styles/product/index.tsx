@@ -1,10 +1,9 @@
 import { Button, IconButton } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Theme, styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import { Colors } from "../theme";
 import { slideInBottom, slideInRight } from '../../animation';
 import "@fontsource/montez";
-
 
 export const Product = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -32,9 +31,14 @@ export const ProductActionButton = styled(IconButton)(() => ({
     margin: 4,
 }))
 
+interface ProdcutFavButtonProps {
+    isFav?: boolean;
+}
+
+
 export const ProdcutFavButton = styled(ProductActionButton, {
     shouldForwardProp: (prop) => prop !== "isFav"
-})(({ isFav, theme }) => ({
+})<ProdcutFavButtonProps>(({ isFav, theme }) => ({
     color: isFav ? Colors.primary : Colors.light,
     [theme.breakpoints.up('md')]: {
         position: 'absolute',
@@ -43,9 +47,12 @@ export const ProdcutFavButton = styled(ProductActionButton, {
     }
 }))
 
+interface ProductAddToCartProps {
+    show?: boolean
+}
 export const ProductAddToCart = styled(Button, {
     shouldForwardProp: (prop) => prop !== "show"
-})(({ show, theme }) => ({
+})<ProductAddToCartProps>(({ show, theme }) => ({
     width: '120px',
     fontSize: '12px',
     alignSelf: 'center',
@@ -67,9 +74,12 @@ export const ProductMetaWrapper = styled(Box)(({ theme }) => ({
     alignItems: "center",
 }));
 
+interface ProductActionsWrapperProps {
+    show?: boolean
+}
 export const ProductActionsWrapper = styled(Box, {
     shouldForwardProp: (prop) => prop !== "show"
-})(({ show, theme }) => ({
+})<ProductActionsWrapperProps>(({ show, theme }) => ({
     [theme.breakpoints.up("md")]: {
         display: show ? 'visible' : 'none',
         position: "absolute",

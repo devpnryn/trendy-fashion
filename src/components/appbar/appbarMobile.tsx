@@ -6,7 +6,7 @@ import Actions from "./actions"
 
 
 const AppbarMobile = ({ matches = false }) => {
-    const { setDrawerOpen, setShowSearchBox } = useUIContext();
+    const { setDrawerOpen, setShowSearchBox }: any = useUIContext();
 
     return (
         <AppbarContainer>

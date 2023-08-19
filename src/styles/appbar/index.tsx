@@ -4,6 +4,11 @@ import { Box } from "@mui/system";
 import { Colors } from "../theme";
 import "@fontsource/montez";
 
+interface Props {
+    children?: React.ReactNode,
+    type: String,
+    // any props that come into the component
+}
 export const AppbarContainer = styled(Box)(() => (
     {
         display: 'flex',
@@ -21,7 +26,7 @@ export const AppbarHeader = styled(Typography)(() => ({
     color: Colors.secondary,
 }))
 
-export const MyList = styled(List)(({ type }) => ({
+export const MyList = styled(List)(({ children, type }: Props) => ({
     display: type === 'row' ? 'flex' : 'block',
     flexGrow: 3,
     justifyContent: 'center',

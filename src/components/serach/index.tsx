@@ -5,7 +5,7 @@ import { SearchBoxContainer, SearchField } from "../../styles/search";
 
 
 const SearchBox = () => {
-    const { showSearchBox, setShowSearchBox } = useUIContext();
+    const { showSearchBox, setShowSearchBox }: any = useUIContext();
     return (
         <Slide direction="down" in={showSearchBox} timeout={500}>
             <SearchBoxContainer>

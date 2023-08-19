@@ -7,7 +7,7 @@ import { Colors } from '../styles/theme';
 
 const AppDrawer = () => {
 
-    const { drawerOpen, setDrawerOpen } = useUIContext();
+    const { drawerOpen, setDrawerOpen }: any = useUIContext();
 
     return (
         <>

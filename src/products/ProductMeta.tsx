@@ -2,7 +2,7 @@ import { Typography } from '@mui/material'
 import React from 'react'
 import { ProductMetaWrapper } from '../styles/product'
 
-export const ProductMeta = ({ product, matches }) => {
+export const ProductMeta = ({ product, matches }: any) => {
     return (
         <ProductMetaWrapper>
             <Typography

@@ -1,3 +1,4 @@
+import React from "react";
 import { Favorite, FitScreen, Share } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import ProductDetails from "../components/productdetails";
@@ -7,15 +8,15 @@ import { ProductMeta } from "./ProductMeta";
 
 function SingleProduct({ product, matches }: any) {
 
-    const [ProductDetailsDialog, showProductDetailDialog, closeProductDetailDialog] = useDialogModel(ProductDetails)
+    const [ProductDetailsDialog, showProductDetailDialog] = useDialogModel(ProductDetails)
     return (
-        <>
+        <React.Fragment>
             <Product>
                 <ProductImage src={product.image} />
                 <ProductMeta product={product} matches={matches} />
                 <ProductActionsWrapper>
                     <Stack direction="row">
-                        <ProdcutFavButton isFav={0}>
+                        <ProdcutFavButton isFav={false}>
                             <Favorite />
                         </ProdcutFavButton>
                         <ProductActionButton>
@@ -29,7 +30,7 @@ function SingleProduct({ product, matches }: any) {
             </Product>
             <ProductAddToCart variant="contained">Add to cart</ProductAddToCart>
             <ProductDetailsDialog product={product} />
-        </>
+        </React.Fragment>
     )
 }
 

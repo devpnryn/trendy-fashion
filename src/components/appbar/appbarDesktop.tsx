@@ -5,7 +5,8 @@ import { AppbarContainer, AppbarHeader, MyList } from "../../styles/appbar"
 import Actions from "./actions"
 
 const AppbarDesktop = ({ matches = false }) => {
-    const { setShowSearchBox } = useUIContext();
+    const { setShowSearchBox }: any = useUIContext();
+
     return (
         <AppbarContainer>
             <AppbarHeader>My Bags</AppbarHeader>
@@ -21,7 +22,7 @@ const AppbarDesktop = ({ matches = false }) => {
                 </ListItemButton>
             </MyList>
             <Actions matches={matches} />
-        </AppbarContainer>
+        </AppbarContainer >
     )
 
 }

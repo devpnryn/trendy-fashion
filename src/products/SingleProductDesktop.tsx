@@ -15,13 +15,13 @@ function SingleProductDesktop({ product, matches }: any) {
     const handleMouseLeave = () => {
         setShowOptions(false)
     }
-    const [ProductDetailsDialog, showProductDetailDialog, closeProductDetailDialog] = useDialogModel(ProductDetails)
+    const [ProductDetailsDialog, showProductDetailDialog] = useDialogModel(ProductDetails)
 
     return (
         <>
             <Product onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <ProductImage src={product.image} />
-                <ProdcutFavButton isFav={0}>
+                <ProdcutFavButton >
                     <Favorite />
                 </ProdcutFavButton>
                 {showOptions && <ProductAddToCart variant="contained" show={showOptions}>Add to Cart</ProductAddToCart>}
